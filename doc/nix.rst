@@ -22,6 +22,13 @@ explain the basics and guide through producing derivations and nix expressions t
 
 .. _`nix pills`: https://nixos.org/nixos/nix-pills/index.html
 
+Nix Discourse
+-------------
+
+The site is `https://discourse.nixos.org/ <https://discourse.nixos.org/>`_.
+
+
+
 
 Twitter links
 -------------
