@@ -22,6 +22,12 @@ explain the basics and guide through producing derivations and nix expressions t
 
 .. _`nix pills`: https://nixos.org/nixos/nix-pills/index.html
 
+Nixos FAQ
+---------
+
+`https://nixos.wiki/wiki/FAQ <https://nixos.wiki/wiki/FAQ>`_
+
+
 Nix Discourse
 -------------
 
