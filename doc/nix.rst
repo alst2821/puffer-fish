@@ -27,22 +27,38 @@ Nixos FAQ
 
 `https://nixos.wiki/wiki/FAQ <https://nixos.wiki/wiki/FAQ>`_
 
+Nix vocabulary
+--------------
 
+Derivation:
+    The first step of a build based on nix expressions.
+
+Attribute:
+    I don't know yet. I think it is an element of the nix language
+
+Environment:
+    This is my terminology and it may be wrong. This is a 'generation' of
+    the list one obtains with `nix-env --list-generations`
+
+Store:
+    The place where components are stored in the local storage.
+    This is currently `/nix/store`
+  
+Channel:
+    I don't know yet.
+
+Generations:
+    Variations of the environment. These are modified when one performs
+    installations and removals. `Pill #11 (section 11.4) <https://nixos.org/nixos/nix-pills/garbage-collector.html>`_ shows a method to remove
+    generations to help the garbage collector.
+
+  
 Nix Discourse
 -------------
 
 The site is `https://discourse.nixos.org/ <https://discourse.nixos.org/>`_.
 
 
-
-
-Twitter links
--------------
-
-Here I record some posts from twitter that I happened to capture:
-
- * `Tarballs, the ultimate container image format <https://guix.gnu.org/blog/2018/tarballs-the-ultimate-container-image-format/>`_
-   (16 May 2018)
 
 .. rubric:: Footnotes
 
