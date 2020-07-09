@@ -30,11 +30,19 @@ Nixos FAQ
 Nix vocabulary
 --------------
 
+Most of the concepts are described on the `Nix expression language`_
+wiki page.
+
+.. _`Nix expression language`: https://nixos.wiki/wiki/Nix_Expression_Language
+
 Derivation:
     The first step of a build based on nix expressions.
 
 Attribute:
-    I don't know yet. I think it is an element of the nix language
+    This is a key from an associative data structure. For example
+    { key1 = "value1" ; key2 = "value2" } has two "attributes", the keys
+    key1 and key2. See "sets" in `[1] <https://nixos.wiki/wiki/Nix_Expression_Language>`_
+    
 
 Environment:
     This is my terminology and it may be wrong. This is a 'generation' of
@@ -49,7 +57,7 @@ Channel:
 
 Generations:
     Variations of the environment. These are modified when one performs
-    installations and removals. `Pill #11 (section 11.4) <https://nixos.org/nixos/nix-pills/garbage-collector.html>`_ shows a method to remove
+    installations and removals. `Pill #11 (section 11.4) <https://nixos.org/nixos/nix-pills/garbage-collector.htmlg>`_ shows a method to remove
     generations to help the garbage collector.
 
   
