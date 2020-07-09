@@ -27,6 +27,8 @@ Nixos FAQ
 
 `https://nixos.wiki/wiki/FAQ <https://nixos.wiki/wiki/FAQ>`_
 
+Notice the 'wiki' top level domain!
+
 Nix Manual
 ----------
 
