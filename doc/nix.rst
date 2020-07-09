@@ -27,6 +27,12 @@ Nixos FAQ
 
 `https://nixos.wiki/wiki/FAQ <https://nixos.wiki/wiki/FAQ>`_
 
+Nix Manual
+----------
+
+`https://nixos.org/nix/manual/ <https://nixos.org/manual>`_
+
+
 Nix vocabulary
 --------------
 
@@ -42,7 +48,6 @@ Attribute:
     This is a key from an associative data structure. For example
     { key1 = "value1" ; key2 = "value2" } has two "attributes", the keys
     key1 and key2. See "sets" in `[1] <https://nixos.wiki/wiki/Nix_Expression_Language>`_
-    
 
 Environment:
     This is my terminology and it may be wrong. This is a 'generation' of
