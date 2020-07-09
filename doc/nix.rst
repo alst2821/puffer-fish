@@ -32,8 +32,11 @@ Notice the 'wiki' top level domain!
 Nix Manual
 ----------
 
-`https://nixos.org/nix/manual/ <https://nixos.org/manual>`_
+nix package manager guide:
+    `https://nixos.org/nix/manual <https://nixos.org/nix/manual/>`_
 
+Nixpkgs Users and Contributors Guide:
+    `https://nixos.org/nixpkgs/manual <https://nixos.org/nixpkgs/manual>`_
 
 Nix vocabulary
 --------------
