@@ -16,6 +16,7 @@ subverting them into publishing!
 
    git
    nix
+   nixpkgs
 
 Indices and tables
 ==================
