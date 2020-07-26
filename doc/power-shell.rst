@@ -1,7 +1,8 @@
-=======================================
- Notes on a Powershell training course
-=======================================
+============
+ PowerShell
+============
 
+.. _Get-ChildItem:  https://go.microsoft.com/fwlink/?LinkID=113308
 .. _Get-Command: https://go.microsoft.com/fwlink/?LinkID=113309
 .. _Get-Help: https://go.microsoft.com/fwlink/?LinkID=113316
 .. _Get-Member: https://go.microsoft.com/fwlink/?LinkID=113322
@@ -17,6 +18,7 @@ Instructor is Jeff Hicks in pluralsight.
 There's online help for commands and on the command line
 e.g:
 
+* Get-ChildItem_
 * Get-Command_
 * Get-Help_
 * Get-Member_
@@ -159,4 +161,26 @@ The comparisons use comparison operators, documented `here <https://docs.microso
 
   'outlookconnector' -like 'outlook*'
   
+  'outlookconnector' -notlike 'outlook*'
+
+   'outlookconnector' -match '^Ou'
+
+   'serv442' -match '\w+\d{1,3}'
+
   
+Filtering using the comparison operators::
+
+  Get-Vegetables | where {$_.isRoot -OR $_.color -eq 'green'}
+
+  Get-Vegetables | where {$_.isRoot -eq $False }
+
+  Get-Vegetables | where {-not ($_.isRoot)} | select name, isRoot
+
+  
+Testing the speed::
+
+  Measure-Command {dir c:\windows\System32 -recurse | where { $_.Extension -eq '.exe'}}
+  
+  Measure-Command {dir c:\windows\System32 -recurse -filter *.exe }
+
+
