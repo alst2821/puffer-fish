@@ -17,6 +17,7 @@ subverting them into publishing!
    git
    nix
    nixpkgs
+   power-shell
 
 Indices and tables
 ==================
