@@ -1,5 +1,4 @@
-============
- PowerShell
+
 ============
 
 .. _Get-ChildItem:  https://go.microsoft.com/fwlink/?LinkID=113308
@@ -12,6 +11,8 @@
 .. _Group-Object: https://go.microsoft.com/fwlink/?LinkID=113338
 .. _Where-Object: https://go.microsoft.com/fwlink/?LinkID=113423
 .. _`Comparison operators`: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators?view=powershell-6
+.. _Start-Service: https://go.microsoft.com/fwlink/?LinkID=113406
+.. _Foreach-Object: https://go.microsoft.com/fwlink/?LinkID=113300
 
 Instructor is Jeff Hicks in pluralsight.
 
@@ -62,7 +63,27 @@ A very long list of properties of module objects::
 
   $env:psmodulepath -split ";"
 
+  import-module storage
+
+  remove-module storage
+
+PowerShellGet::
+  
+  get-command -module PowerShellGet | more
+
+  Get-PSRepository
+
+  find-module -tag sqlserver
+
+  find-module sqlserver | select-object *
+
   powershell-get
+
+  save-module sqlhelper -path c:\save
+
+  dir c:\save -recurse | more
+
+  ise c:\save\sqlhelper\1.1\sqlhelper.psm1
 
   install-module <name> -scope CurrentUser
 
@@ -182,5 +203,32 @@ Testing the speed::
   Measure-Command {dir c:\windows\System32 -recurse | where { $_.Extension -eq '.exe'}}
   
   Measure-Command {dir c:\windows\System32 -recurse -filter *.exe }
+
+
+Advanced examples (using Start-Service_)::
+
+  get-eventlog system | group source -noelement | sort count -Descending | select -first 10 | out-gridview
+
+  get-service bits | select *
+
+  get-service | where status -eq 'stopped'
+
+  get-service | where status -eq 'stopped' | select displayname, name,starttype
+
+  get-service | where {$_.status -ne 'running' -and $_.starttype -eq 'automatic'}
+
+  get-service | where {$_.status -ne 'running' -and $_.starttype -eq 'automatic'} | start-service -passThru
+
+  $s = Get-Service wmi
+  Start-Service -InputObject $s -PassThru | Format-List >> services.txt
+
+  
+Pipeline exceptions
+-------------------
+
+To do something to an individual object.
+This uses Foreach-Object_::
+  
+
 
 
