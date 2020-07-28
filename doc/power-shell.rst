@@ -225,14 +225,3 @@ Advanced examples (using Start-Service_)::
   Start-Service -InputObject $s -PassThru | Format-List >> services.txt
 
   
-..Pipeline exceptions
-..-------------------
-..
-..To do something to an individual object.
-..This uses Foreach-Object_::
-.. test
-
-   
-
-
-
