@@ -1,5 +1,7 @@
-
 ============
+ PowerShell
+============
+
 
 .. _Get-ChildItem:  https://go.microsoft.com/fwlink/?LinkID=113308
 .. _Get-Command: https://go.microsoft.com/fwlink/?LinkID=113309
@@ -223,12 +225,14 @@ Advanced examples (using Start-Service_)::
   Start-Service -InputObject $s -PassThru | Format-List >> services.txt
 
   
-Pipeline exceptions
--------------------
+..Pipeline exceptions
+..-------------------
+..
+..To do something to an individual object.
+..This uses Foreach-Object_::
+.. test
 
-To do something to an individual object.
-This uses Foreach-Object_::
-  
+   
 
 
 
