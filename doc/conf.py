@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'puffer-fish'
-copyright = '2020, yut45390'
-author = 'yut45390'
+copyright = '2020, alst2821'
+author = 'alst2821'
 
 # The short X.Y version
 version = ''
@@ -130,7 +130,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'puffer.tex', 'Puffer Fish Documentation',
-     'yut45390', 'manual'),
+     'alst2821', 'manual'),
 ]
 
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'yut', 'Puffer Fish Documentation',
+    (master_doc, 'alst', 'Puffer Fish Documentation',
      [author], 1)
 ]
 
@@ -151,7 +151,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'puffer', 'Puffer Fish Documentation',
-     author, 'yut', 'Sphinx-generated pages.',
+     author, 'alst', 'Sphinx-generated pages.',
      'Miscellaneous'),
 ]
 
