@@ -6,6 +6,14 @@
 
 * `Git user manual <https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html>`_
 
+* `A successful git branching model
+  <https://nvie.com/posts/a-successful-git-branching-model/>`_ by
+  Vincent Driessen
+
+* `Git magic`_ is a book that is kept in a git repo and `also in github <https://github.com/blynn/gitmagic>`_
+  
+.. _`Git magic`: http://www-cs-students.stanford.edu/~blynn/gitmagic/
+
 
 Links about rewriting history:
 
