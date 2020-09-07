@@ -16,6 +16,7 @@ subverting them into publishing!
 
    emacs
    git
+   linux
    nix
    nixpkgs
    power-shell
