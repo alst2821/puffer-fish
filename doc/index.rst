@@ -14,6 +14,7 @@ subverting them into publishing!
    :maxdepth: 1
    :caption: Notes
 
+   cplusplus
    emacs
    git
    linux
