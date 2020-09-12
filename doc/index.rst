@@ -18,6 +18,7 @@ subverting them into publishing!
    emacs
    git
    linux
+   debian
    nix
    nixpkgs
    power-shell
