@@ -15,17 +15,22 @@ subverting them into publishing!
    :caption: Notes
 
    bash
+   centos
    cplusplus
    git
    linux
    debian
+   haskell
    nix
    nixpkgs
+   macports
    man
    make
    matplotlib
+   osx
    power-shell
    python
+   pyqt
    rust
    ssh
 
@@ -35,7 +40,8 @@ subverting them into publishing!
    :maxdepth: 2
    :caption: Emacs entries
 
-   emacs             
+   emacs
+   emacs-rpm
 
 .. _ref-fedora-toctree:   
 
@@ -43,7 +49,8 @@ subverting them into publishing!
    :maxdepth: 2
    :caption: Fedora entries
 
-   fedora             
+   fedora
+   mock
 
 Indices and tables
 ==================
