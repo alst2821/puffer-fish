@@ -34,3 +34,21 @@ Style
    $ sudo dnf install ShellCheck
    $ shellcheck myscript.sh
 
+Stderr in red
+-------------
+
+`Methods to show stderr in red <https://serverfault.com/questions/59262/bash-print-stderr-in-red-color>`_
+
+Method 1: Use process substitution::
+
+  command 2> >(sed $'s,.*,\e[31m&\e[m,'>&2)
+
+Method 2: Create a function in a bash script::
+
+  color()(set -o pipefail;"$@" 2>&1>&3|sed $'s,.*,\e[31m&\e[m,'>&2)3>&1
+
+Use it like this::
+
+  $ color command
+
+Both methods will show the command's stderr in red.

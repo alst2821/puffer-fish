@@ -16,11 +16,15 @@ subverting them into publishing!
 
    bash
    centos
+   clanguage
    cplusplus
    git
    linux
    debian
    haskell
+   kernel
+   java
+   javascript
    nix
    nixpkgs
    macports
@@ -33,6 +37,7 @@ subverting them into publishing!
    pyqt
    rust
    ssh
+   utilities
 
 .. _ref-emacs-toctree:   
    

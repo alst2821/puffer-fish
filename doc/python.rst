@@ -19,12 +19,18 @@
 
 .. [#fn1] Accessed on 28 Aug 2019
 
+:ref:`Matplotlib <ref-matplotlib>` (separate page).
 
-I also made a few notes about :ref:`matplotlib <ref-matplotlib>` on a
-separate page.
-          
+`PyFormat <https://pyformat.info/>`_: Examples of using format() in python
+
+Old talk by Aaron Meurer:
+`10 awesome features of Python you cannot do because you are still using Python 2 <https://asmeurer.github.io/python3-presentation/slides.html>`_
+9 April 2014 at APUG
+
+`Python documentation in info format <https://sites.google.com/site/roneau2010/computer-software/emacs/python-documentation>`_ (useful with a powerful info reader like emacs).
+
 Example using datetime
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 The documentation of the `datetime module
 <https://docs.python.org/3.7/library/datetime.html>`_ indicates that
@@ -42,9 +48,9 @@ there are these objects:
     a = datetime.datetime.fromtimestamp(b)
     print(a)
 
-=============
- Style guide
-=============
+Style guide
+-----------
+
 
 * `Google python style guide`_ (part of the general `style guides`_).
   These guides are kept in a "styleguide" `github repo`_.

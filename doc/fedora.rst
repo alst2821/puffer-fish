@@ -194,6 +194,17 @@ And this is for a newer Lenovo ThinkPad laptop::
     </configuration>
   </monitors>
 
+gnome-gdm
+---------
+
+`Configure monitors for login screen <https://askbot.fedoraproject.org/en/question/36631/configure-monitors-for-login-screen/>`_
+
+Copy the monitor configuration file from a user account where it is
+configured properly to the gdm directory:
+
+cp /<user home dir>/.config/monitors.xml /var/lib/gdm/.config/
+
+  
 Fedora Packaging
 ----------------
 
