@@ -43,8 +43,8 @@ Add to array as spare::
 Debian sources.list for apt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The `sources list page`_ [#fn3]_ on the debian wiki explains what one has
-to add to the apt/sources.list file to use contrib non-free
+The `sources list page`_ on the debian wiki explains what one has to
+add to the apt/sources.list file to use contrib non-free
 
 .. _`sources list page`: https://wiki.debian.org/SourcesList
 

@@ -14,14 +14,36 @@ subverting them into publishing!
    :maxdepth: 1
    :caption: Notes
 
+   bash
    cplusplus
-   emacs
    git
    linux
    debian
    nix
    nixpkgs
+   man
+   make
+   matplotlib
    power-shell
+   python
+   rust
+   ssh
+
+.. _ref-emacs-toctree:   
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Emacs entries
+
+   emacs             
+
+.. _ref-fedora-toctree:   
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Fedora entries
+
+   fedora             
 
 Indices and tables
 ==================

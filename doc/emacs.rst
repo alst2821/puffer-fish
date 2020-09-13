@@ -2,12 +2,7 @@
  Emacs
 =======
 
-.. toctree::
-   :maxdepth: 2
-
-   emacs
-
-.. _ref-emacs-sec1:
+:ref:`(contents) <ref-emacs-toctree>`
 
 Useful functions
 ----------------
@@ -23,7 +18,7 @@ Function to copy file marked in dired to the kill-ring::
               (function identity) (dired-get-marked-files) " ")))
        (kill-new string)
        (message "%s" string)))
-       
+
 This gets the function above mapped to "K" in dired::
 
   (add-hook 'dired-load-hook
@@ -117,12 +112,12 @@ Compilation window using colours
 
 This lisp initialization allows a build on the compilation buffer to
 show ansi escape codes okay::
-  
+
   (add-hook 'compilation-filter-hook
 	  (lambda ()
 	    (ansi-color-apply-on-region compilation-filter-start (point))))
 
-    
+
 dired-x and .dired file
 -----------------------
 
@@ -156,7 +151,7 @@ To convert to DOS or to Unix line endings [#fn1]_:
 * Method 2: Run the command::
 
     C-x RET f (set-buffer-file-coding-system)
-    
+
   and type unix/dos for unix encoding. This will change the encoding
   of newlines without changing the encoding of other characters.
 
@@ -166,7 +161,7 @@ To convert to DOS or to Unix line endings [#fn1]_:
 Navigate C sources
 ------------------
 Use the commands [#fn2]_::
-  
+
   c-backward-conditional
 
   c-forward-conditional
@@ -174,14 +169,14 @@ Use the commands [#fn2]_::
   c-up-conditional
 
 .. rubric:: Footnotes
-.. [#fn1] Source: Emacs Stack Exchange `question <https://emacs.stackexchange.com/questions/5779/>`_ from 2014 by user Charo	    
+.. [#fn1] Source: Emacs Stack Exchange `question <https://emacs.stackexchange.com/questions/5779/>`_ from 2014 by user Charo
 .. [#fn2] Peter Lee, `"Matching #ifdefs..." <https://lists.gnu.org/archive/html/help-gnu-emacs/2003-01/msg01000.html>`_ in help-gnu-emacs mailing list. 31 Jan 2003.
-  
+
 Tramp on remote server
 ----------------------
 
 There are many tips in the `tramp page of emacs wiki
-<https://www.emacswiki.org/emacs/TrampMode>`_ and there is the 
+<https://www.emacswiki.org/emacs/TrampMode>`_ and there is the
 `User Manual <http://www.gnu.org/software/emacs/manual/html_node/tramp/index.html>`_.
 
 I have a selection below:
@@ -197,13 +192,13 @@ How to use tramp to edit a file as root. Use::
 Tramp from windows using plink (tested in the past with PuTTY's plink and Pageant running)::
 
   C-x C-f /plink:USERNAME@SERVER:.emacs RET
-  
+
 The general syntax is::
 
   tramp open file syntax:
   /<user>@<host>:/path/to/file or
   /<protocol>:<user>@<host>:/path/to/file
-  
+
 Chinese chars when UTF-16 file read
 -----------------------------------
 
@@ -212,8 +207,8 @@ advertises the xml as UTF-16.
 
 The solution, to show the xml normally (utf-8) is.
 
-.. code:: 
-	  
+.. code::
+
   M-x revert-buffer-with-coding-system
 
 and choose ``binary`` encoding.
@@ -252,7 +247,7 @@ Prototype interactive function to select words and place them in a note file.::
     (defun pf-takenote ()
       (interactive)
       (let ( p1 p2 s)
-        (save-excursion 
+        (save-excursion
           (forward-word)
           (backward-word)
           (setq p1 (point))
@@ -264,7 +259,7 @@ Prototype interactive function to select words and place them in a note file.::
           (insert s)
           (insert " \n"))
           (forward-word)))
-    
+
     (global-set-key (kbd "<f5>") 'pf-takenote)
 
 Emacs related links
@@ -278,19 +273,21 @@ Emacs related links
 Here is a link to some `emacs tips
 <https://sites.google.com/site/roneau2010/computer-software/emacs>`_.
 
-Using emacs ``M-x compile`` to generate windows targets
--------------------------------------------------------
+Emacs compile command on windows
+--------------------------------
 
-Use a script similar to the one below. It was obtained from an
-environment as populated by ``vcvars.bat`` (visual studio command line
-compiler invocation batch file).  Name it "emacs-env.bat".  Then one
-can use the emacs M-x compile command to invoke visual studio so::
+I describe below a method I liked to use emacs ``M-x compile`` to
+generate windows targets when using a windows 2008 server.  I used a
+script obtained from an environment as populated by ``vcvars.bat``
+(visual studio command line compiler invocation batch file). I named
+it "emacs-env.bat".  Then one can use the emacs M-x compile command to
+invoke Visual Studio so::
 
   M-x compile RET
   X:/path/to/script/emacs-env.bat make RET
 
 .. code:: batch
-	  
+
  @set CommandPromptType=Native
  @set Framework35Version=v3.5
  @set FrameworkDir=C:\Windows\Microsoft.NET\Framework64
@@ -367,4 +364,83 @@ can use the emacs M-x compile command to invoke visual studio so::
  @set VSINSTALLDIR=c:\Program Files (x86)\Microsoft Visual Studio 10.0\
  @set WindowsSdkDir=C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\
  %*
- 
+
+The version below was prepared for visual studio 2017
+
+.. code:: batch
+
+ rem settings visual studio x64 native tools for vs2017
+ @set CommandPromptType=Native
+ @set DevEnvDir=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\
+ @set __DOTNET_ADD_64BIT=1
+ @set __DOTNET_PREFERRED_BITNESS=64
+ @set ExtensionSdkDir=C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs
+ @set Framework40Version=v4.0
+ @set FrameworkDir64=C:\Windows\Microsoft.NET\Framework64\
+ @set FrameworkDir=C:\Windows\Microsoft.NET\Framework64\
+ @set FrameworkVersion64=v4.0.30319
+ @set FrameworkVersion=v4.0.30319
+ @set INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\ATLMFC\include
+ @set INCLUDE=%INCLUDE%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include
+ @set INCLUDE=%INCLUDE%;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um
+ @set INCLUDE=%INCLUDE%;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt
+ @set INCLUDE=%INCLUDE%;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared
+ @set INCLUDE=%INCLUDE%;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um
+ @set INCLUDE=%INCLUDE%;C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt;
+ @set LIB=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\ATLMFC\lib\x64
+ @set LIB=%LIB%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\x64
+ @set LIB=%LIB%;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64
+ @set LIB=%LIB%;C:\Program Files (x86)\Windows Kits\10\lib\10.0.14393.0\ucrt\x64
+ @set LIB=%LIB%;C:\Program Files (x86)\Windows Kits\10\lib\10.0.14393.0\um\x64;
+ @set LIBPATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\ATLMFC\lib\x64
+ @set LIBPATH=%LIBPATH%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\x64
+ @set LIBPATH=%LIBPATH%;C:\Program Files (x86)\Windows Kits\10\UnionMetadata
+ @set LIBPATH=%LIBPATH%;C:\Program Files (x86)\Windows Kits\10\References
+ @set LIBPATH=%LIBPATH%;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;
+ NETFXSDKDir=C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\
+ @set Path=
+ @set Path=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\bin\HostX64\x64
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCPackages
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft SDKs\TypeScript\2.1
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\Roslyn
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\
+ @set Path=%Path%;C:\Program Files (x86)\Windows Kits\10\bin\x64
+ @set Path=%Path%;C:\Program Files (x86)\Windows Kits\10\bin\10.0.14393.0\x64
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\\MSBuild\15.0\bin
+ @set Path=%Path%;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\
+ @set Path=%Path%;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\
+ @set Path=%Path%;C:\WINDOWS\system32
+ @set Path=%Path%;C:\WINDOWS
+ @set Path=%Path%;C:\WINDOWS\System32\Wbem
+ @set Path=%Path%;C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+ @set Path=%Path%;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\
+ @set Path=%Path%;C:\Users\Father\AppData\Local\Microsoft\WindowsApps;
+ @set Platform=x64
+ @set UCRTVersion=10.0.14393.0
+ @set UniversalCRTSdkDir=C:\Program Files (x86)\Windows Kits\10\
+ @set VCIDEInstallDir=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\
+ @set VCINSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\
+ @set VCToolsInstallDir=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\
+ @set VCToolsRedistDir=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.10.25017\
+ @set VisualStudioVersion=15.0
+ @set VS150COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\
+ @set VSCMD_ARG_app_plat=Desktop
+ @set VSCMD_ARG_HOST_ARCH=x64
+ @set VSCMD_ARG_TGT_ARCH=x64
+ @set __VSCMD_PREINIT_PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\10\Windows Performanc e Toolkit\;C:\Users\Father\AppData\Local\Microsoft\WindowsApps;
+ @set VSCMD_VER=15.0.26228.9
+ @set VSINSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\
+ @set WindowsLibPath=C:\Program Files (x86)\Windows Kits\10\UnionMetadata;C:\Program Files (x86)\Windows Kits\10\References
+ @set WindowsSdkBinPath=C:\Program Files (x86)\Windows Kits\10\bin\
+ @set WindowsSdkDir=C:\Program Files (x86)\Windows Kits\10\
+ @set WindowsSDK_ExecutablePath_x64=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\x64\
+ @set WindowsSDK_ExecutablePath_x86=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\
+ @set WindowsSDKLibVersion=10.0.14393.0\
+ @set WindowsSdkVerBinPath=C:\Program Files (x86)\Windows Kits\10\bin\10.0.14393.0\
+ @set WindowsSDKVersion=10.0.14393.0\
+ %
