@@ -286,6 +286,12 @@ invoke Visual Studio so::
   M-x compile RET
   X:/path/to/script/emacs-env.bat make RET
 
+Maybe also useful::
+
+  (setq compile-history
+      (append compile-history
+	      '("c:/path-to-script/emacs-env.bat make")))
+  
 .. code:: batch
 
  @set CommandPromptType=Native
@@ -444,3 +450,13 @@ The version below was prepared for visual studio 2017
  @set WindowsSdkVerBinPath=C:\Program Files (x86)\Windows Kits\10\bin\10.0.14393.0\
  @set WindowsSDKVersion=10.0.14393.0\
  %
+
+MacOS super key
+---------------
+
+These keybinding may help if one prefers the apple command instead of ctrl::
+
+  (global-set-key (kbd "s-b") 'backward-word)
+  (global-set-key (kbd "s-f") 'forward-word)
+  (global-set-key (kbd "s-d") 'kill-word)
+  
