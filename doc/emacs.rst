@@ -77,8 +77,9 @@ These functions are similar to vim's `*` command::
 
   (global-set-key (kbd "C-c *") 'pf-isearch-word-at-point)
 
-Increment number at point::
+Increment number at point ( `Solution in emacswiki <https://www.emacswiki.org/emacs/IncrementNumber>`_ )::
 
+  
   (defun my-increment-number-decimal (&optional arg)
     "Increment the number forward from point by 'arg'."
     (interactive "p*")
@@ -285,6 +286,13 @@ Prototype interactive function to select words and place them in a note file.::
 
     (global-set-key (kbd "<f5>") 'pf-takenote)
 
+Emacs client for the language server protocol
+---------------------------------------------
+
+https://github.com/emacs-lsp/lsp-mode/
+
+https://emacs-lsp.github.io/lsp-mode/
+    
 Emacs related links
 -------------------
 
