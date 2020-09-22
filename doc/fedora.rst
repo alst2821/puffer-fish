@@ -30,7 +30,7 @@ initramfs. Accessed okay on 20 Oct 2018.
 Locating documentation
 ----------------------
 
-From around 2020 fedora are trying to put all documentation together in `docs.fedoraproject.org <https://docs.fedoraproject.org/en-US/docs/>`_.
+From around 2020 fedora are trying to put all documentation together in `docs.fedoraproject.org <ref-fedoraproject>`_.
 
 Have a look at `apps.fedoraproject.org <http://apps.fedoraproject.org/>`_
 
@@ -40,11 +40,13 @@ FESCo is the Fedora Engineering Steering Committee.
 
 `Bugzilla <https://bugzilla.redhat.com/>`_ where reviews and bugs are entered.
 
-Wiki documentation on the various systems (the wiki site is deprecated, so the deep links here work, but the top link takes one to `docs.fedoraproject.org <https://docs.fedoraproject.org/>`_):
+Wiki documentation on the various systems (the wiki site is deprecated, so the deep links here work, but the top link takes one to `docs.fedoraproject.org <ref-fedoraproject>`_):
 
 Koji: `Using the koji build system <https://fedoraproject.org/wiki/Using_the_Koji_build_system>`_
 
 `Bhodi <https://fedoraproject.org/wiki/Bodhi>`_
+
+.. _ref-fedoraproject: https://docs.fedoraproject.org
 
 
 MP4 video codecs
