@@ -63,4 +63,10 @@ Style guide
   The `example code <https://github.com/fluentpython/example-code>`_ is in github.
   
 
+Virtualenv
+----------
+
+Turns out that `virtualenv`_ is not the same as venv
+
+_virtualenv: https://virtualenv.pypa.io/en/latest/
 
