@@ -66,7 +66,11 @@ Style guide
 Virtualenv
 ----------
 
-Turns out that `virtualenv`_ is not the same as venv_
+Turns out that virtualenv_ is not the same as venv_
 
-.. _`virtualenv` : https://virtualenv.pypa.io/en/latest/
+Then there also is pipenv_.
+
+.. _virtualenv : https://virtualenv.pypa.io/en/latest/
 .. _venv: https://docs.python.org/3/library/venv.html
+.. _pipenv: https://pipenv.pypa.io/en/latest/
+
