@@ -68,7 +68,14 @@ Virtualenv
 
 Turns out that virtualenv_ is not the same as venv_
 
-Then there also is pipenv_.
+I finally read a `stack overflow article/question <https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe>`_ (Jan 2017) that clarifies what
+is what and there's a good `link to explain pipenv <https://realpython.com/pipenv-guide/#problems-that-pipenv-solves>`_ in realpython.com
+
+I think I like the answer from Rias Rizvi suggesting that one should
+generally use venv for python 3.3 and newer. Since python 2 is
+deprecated, it sounds like there is no need to use virtualenv.
+
+Then there also is pipenv_. And pipenv uses virtualenv instead of venv. 
 
 .. _virtualenv : https://virtualenv.pypa.io/en/latest/
 .. _venv: https://docs.python.org/3/library/venv.html
