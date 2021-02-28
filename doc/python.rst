@@ -21,6 +21,10 @@
 
 :ref:`Matplotlib <ref-matplotlib>` (separate page).
 
+
+`Managing dependencies — Reinout van Rees's website <http://reinout.vanrees.org/weblog/2009/12/17/managing-dependencies.html>`_
+Article from 2009 about Managing dependencies.
+     
 `PyFormat <https://pyformat.info/>`_: Examples of using format() in python
 
 Old talk by Aaron Meurer:

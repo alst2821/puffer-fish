@@ -28,3 +28,8 @@ gnu-c-preprocessor-documentation
 --------------------------------
 
 https://gcc.gnu.org/onlinedocs/cpp/index.html#Top
+
+Underhanded C contest
+
+http://underhanded-c.org/
+

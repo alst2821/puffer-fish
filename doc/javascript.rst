@@ -2,9 +2,9 @@
  Javascript
 ============
 
-jquery plugin
+`Jquery datatables plugin https://www.datatables.net/ <https://www.datatables.net/>`_
 
-https://www.datatables.net/
+`Jquery fundamentals http://jqfundamentals.com/ <http://jqfundamentals.com/>`_
 
 firefox developer edition
 
