@@ -25,6 +25,7 @@ subverting them into publishing!
    kernel
    java
    javascript
+   kubernetes
    nix
    nixpkgs
    macports
