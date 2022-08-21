@@ -26,6 +26,8 @@ subverting them into publishing!
    java
    javascript
    kubernetes
+   kubernetes-ch8
+   kubernetes-ch8-pods
    nix
    nixpkgs
    macports
