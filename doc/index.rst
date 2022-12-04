@@ -31,6 +31,7 @@ subverting them into publishing!
    nix
    nixpkgs
    macports
+   macports1
    man
    make
    matplotlib
