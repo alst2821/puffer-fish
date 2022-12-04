@@ -38,6 +38,8 @@ To get a list of updates::
 
   port list outdated
 
+  port upgrade outdated
+
 Investigation of the folders used by macports
 ---------------------------------------------
 
