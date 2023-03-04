@@ -304,6 +304,8 @@ Emacs related links
 Here is a link to some `emacs tips
 <https://sites.google.com/site/roneau2010/computer-software/emacs>`_.
 
+* `Using GNU Emacs (lib.uchicago.edu) <https://www2.lib.uchicago.edu/keith/emacs>`_.
+
 Emacs compile command on windows
 --------------------------------
 
