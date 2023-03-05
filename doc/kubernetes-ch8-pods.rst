@@ -1,6 +1,6 @@
 
-Pods
-----
+Kubernetes Pods
+---------------
 
 Example of a stand-alone pod definition, as YAML::
 
