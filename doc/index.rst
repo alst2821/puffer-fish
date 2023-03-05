@@ -19,6 +19,7 @@ subverting them into publishing!
    clanguage
    cplusplus
    git
+   go
    linux
    debian
    haskell
