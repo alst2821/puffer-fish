@@ -1,9 +1,8 @@
 Go
 ==
 
-Go links:
+Go links
 
-* `Packages search <https://pkg.go.dev/>`_
-
-* `Start here (go.dev)<https://go.dev/>`_
+* `Start here (go.dev) <https://go.dev />`_
+* `Packages search <https://pkg.go.dev />`_
   
