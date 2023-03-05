@@ -38,6 +38,7 @@ subverting them into publishing!
    matplotlib
    minikube
    osx
+   podman
    power-shell
    python
    pyqt
