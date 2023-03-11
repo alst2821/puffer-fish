@@ -21,11 +21,18 @@ Function to copy file marked in dired to the kill-ring::
 
 This gets the function above mapped to "K" in dired::
 
+  (with-eval-after-load 'dired
+    (define-key dired-mode-map "K"
+      'pf-copy-filename-as-kill))
+  
+For versions of emacs 27 or older::
+
   (add-hook 'dired-load-hook
           (lambda ()
             (define-key dired-mode-map "K"
               'pf-copy-filename-as-kill)))
 
+              
 This function emulates vim-exec::
 
   (defun pf-emulate-vim-exec ()
