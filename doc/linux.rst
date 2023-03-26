@@ -25,6 +25,10 @@ discusses the motivation of systemd.
 
 * `The linux kernel user's and administrator's guide <https://www.kernel.org/doc/html/latest/admin-guide/index.html>`_ (kernel.org)
 
+* `The tragedy of systemd <https://www.youtube.com/watch?v=o_AIw9bGogo>`_ talk by Benno Rice at linux.conf.au in Jan 2019.
+
+* The talk above references this article: `Contempt culture <http://blog.aurynn.com/2015/12/16-contempt-culture>`_ 
+  
 .. rubric:: Footnotes
 	    
 .. [#f1] Accessed on 12 August 2019
