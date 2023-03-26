@@ -9,6 +9,15 @@ Two blog posts by John Graham-Cumming, author of the `GNU Make Book`_.
 
 * `One weird trick that will give you makefile X-ray vision`_
 
+  This article advocates adding the lines::
+
+    _SHELL := $(SHELL)
+    SHELL = $(warning [$@])$(_SHELL) -x
+
+A commenter also added a link to stack overflow with a few other options
+(`here <https://stackoverflow.com/questions/24820594>`_).
+  
+
 *  `Debugging Makefiles`_ by John Graham-Cumming. Feb 2007. An even older article in Dr Dobbs, now linked through the web-archive. [#fn1]_
 
 * `The GNU Make Debugger` http://gmd.sourceforge.net/
