@@ -40,3 +40,7 @@ To get a list of updates::
 
   port upgrade outdated
 
+Regularly run this to update the list of ports::
+
+  sudo port selfupdate
+
