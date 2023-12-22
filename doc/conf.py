@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'puffer-fish'
-copyright = '2020, alst2821'
+copyright = '2023, alst2821'
 author = 'alst2821'
 
 # The short X.Y version
