@@ -500,3 +500,35 @@ These keybinding may help if one prefers the apple command instead of ctrl::
   (global-set-key (kbd "s-f") 'forward-word)
   (global-set-key (kbd "s-d") 'kill-word)
   
+Inserting foreign characters
+----------------------------
+
+The full set of key sequences for accented characters is available from emacs by typing::
+
+  C-x 8 C-h
+
+I chose the ones useful when typing Spanish below.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Character
+     - Sequence
+   * - á
+     - C-x 8 ' a
+   * - é
+     - C-x 8 ' e
+   * - í
+     - C-x 8 ' i
+   * - ó
+     - C-x 8 ' o
+   * - ú
+     - C-x 8 ' u
+   * - ü
+     - C-x 8 " u
+   * - ñ
+     - C-x 8 ~ n
+   * - ¡ (open exclamation mark)
+     - C-x 8 * !
+   * - ¿ (open question mark)
+     - C-x 8 * ?
