@@ -2,19 +2,26 @@
  OSX notes
 ===========
 
-When using a terminal from the 'Terminal' app on a Mac, I noticed
-quickly that the meta key used in emacs and readline at linux
-terminals does not operate as expected.
+Links for the Mac OS user guide [#f1]_:
 
-The solution is a checkbox labelled 'Use option as meta key'.
+* `Monterrey (12) <https://support.apple.com/en-gb/guide/mac-help/welcome/12.0/mac>`_
 
-This is available from the app preferences menu, in the keyboard tab.
+* `Sonoma (14) <https://support.apple.com/en-gb/guide/mac-help/mchld1690538/14.0/mac/14.0>`_
+  
 
-A `nice description with screenshots in osxdaily
-<http://osxdaily.com/2013/02/01/use-option-as-meta-key-in-mac-os-x-terminal/>`_ [#f1]_
-taught me that. Thanks!
+Notes on using the terminal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-However when using a terminal, this gets in the way of typing
+When using a terminal from the 'Terminal' app on a Mac, the key
+labelled "alt" can be configured to be the "meta key" for convenient
+use in emacs and for readline at the command prompt.
+
+To do this select "use option as meta key".
+
+Navigation is Preferences >> Tab "profiles" >> Sub tab "keyboard" and
+check the box at the bottom labelled 'Use option as meta key'. [#f2]_
+
+HOWEVER, when using a terminal, this gets in the way of typing
 accented characters using the option key.
 The configuration of emacs to use the modifier can be added to the .emacs file
 ::
@@ -57,5 +64,8 @@ And I added TERMINFO_DIRS to .zshrc::
 
 .. rubric:: Footnotes
 
-.. [#f1] Accessed on 27 July 2019.
+.. [#f1] (accessed 5 July 2024)
+         
+.. [#f2] Thanks to `osxdaily <http://osxdaily.com/2013/02/01/use-option-as-meta-key-in-mac-os-x-terminal/>`_,
+         (accessed 27 July 2019)
 	
