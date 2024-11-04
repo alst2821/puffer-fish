@@ -4,13 +4,17 @@
 
 * `The Rust programming language <https://doc.rust-lang.org/book/title-page.html>`_ [#f1]_.
 
+* `Rust book experiment (brown.edu) - includes quizes! <https://rust-book.cs.brown.edu/experiment-intro.html>`_ [#f6]_
+  
 * `The cargo book <https://doc.rust-lang.org/cargo/>`_
 
 * Cargo recognises `semantic versioning <https://semver.org/>`_
 
 * `The rust standard library`_.
 
-
+* `crates.io <https://crates.io/>`_ "Crates.io is where people in the
+  Rust ecosystem post their open source Rust projects for others to
+  use."
 
 The rust programming language book
 ----------------------------------
@@ -34,6 +38,38 @@ update'.
 The documentation example::
   
   cargo doc --open
+
+`Chapter 4
+<https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html>`_
+talks about ownership, the very special rust concept:
+
+ - Each value in rust has an owner
+ - There can only be one owner at a time
+ - When the owner goes out of scope, the value will be dropped.
+
+Other things discussed are cloning, the Copy trait of a type, the `drop`
+method (that implements the Drop trait).
+
+For function calls, passing a variable to a function will move or
+copy, just as assignment does.
+
+The section on references explains the method as a way to avoid
+the (protocol) of getting ownership when entering a function and
+returning ownership on function return.
+
+Normal references are not mutable. Adding `mut` changes the reference
+to mutable reference.  Mutable references have one big restriction: if
+you have a mutable reference to a value, you can have no other
+references to that value.
+
+Rust prevents the problem of `data races` by refusing to compile code
+with data races!
+
+Rules of references:
+
+ - you can have either one mutable reference (read/write) or any
+   number of immutable references. (Swimmer, single write, multiple read).
+ - references must be always valid - rust checks this with lifetimes [#f5]_ and ownership.
 
 `Rust (wikipedia)`_, this includes a `video`_ in webm by Emily Dunham at
 linux.conf.au in 2017. 
@@ -66,3 +102,6 @@ http://talks.edunham.net/lca2018/should-you-rewrite-in-rust/
 	 
 .. [#f4] Accessed on 6 Oct 2019.
  
+.. [#f5] Still a topic to learn as I write this.
+
+.. [#f6] The content was different to the rust book when checking in Nov 2024.         
