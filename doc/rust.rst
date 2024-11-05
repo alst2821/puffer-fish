@@ -2,6 +2,8 @@
  Rust links
 ============
 
+* `Learn rust link <https://www.rust-lang.org/learn>`_
+
 * `The Rust programming language <https://doc.rust-lang.org/book/title-page.html>`_ [#f1]_.
 
 * `Rust book experiment (brown.edu) - includes quizes! <https://rust-book.cs.brown.edu/experiment-intro.html>`_ [#f6]_
