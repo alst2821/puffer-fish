@@ -73,6 +73,28 @@ Rules of references:
    number of immutable references. (Swimmer, single write, multiple read).
  - references must be always valid - rust checks this with lifetimes [#f5]_ and ownership.
 
+The chapter about fixing unsafe programs revealed to me a lack of
+understanding and the use of several methods:
+
+ - references
+ - indirection
+ - static storage
+ - borrow checker
+ - ownership
+ - read/write/ownership
+ - lifetime of referred data
+
+Methods to extend the lifetime (for the example of a function returning a string reference):
+
+ - Move ownership by returning a String ( -> String )
+ - Return a string literal ( -> &'static str )
+ - Defer borrow checking to runtime using reference counted pointer ( -> Rc<String> )
+ - Have the caller provide a "slot" (signature includes "output: &mut String")
+
+The topics are: returning a reference, enough permissions, aliasing
+and mutating a data structure
+
+
 `Rust (wikipedia)`_, this includes a `video`_ in webm by Emily Dunham at
 linux.conf.au in 2017. 
 
