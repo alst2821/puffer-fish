@@ -94,6 +94,18 @@ Methods to extend the lifetime (for the example of a function returning a string
 The topics are: returning a reference, enough permissions, aliasing
 and mutating a data structure
 
+Only now after reading `chapter 5 <https://rust-book.cs.brown.edu/ch05-03-method-syntax.html>`_
+I realise that there are these properties on a variable:
+
+ * readable (yes/no)
+ * writeable (yes/no)
+ * ownership (yes, no)
+
+The `mut` keyword is needed for the `writeable` property.
+
+The readable property is available on the variable and its references,
+unless the ownership is gone and the access would be undefined.
+
 
 `Rust (wikipedia)`_, this includes a `video`_ in webm by Emily Dunham at
 linux.conf.au in 2017. 
