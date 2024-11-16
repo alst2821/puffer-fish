@@ -21,8 +21,6 @@
 The rust programming language book
 ----------------------------------
 
-The rust book calls rust programmers 'rustaceans'.
-
 `Chapter 1
 <https://doc.rust-lang.org/book/ch01-00-getting-started.html>`_ is an
 introduction to the basic tools, including cargo and the installation
@@ -106,9 +104,10 @@ The `mut` keyword is needed for the `writeable` property.
 The readable property is available on the variable and its references,
 unless the ownership is gone and the access would be undefined.
 
-
-`Rust (wikipedia)`_, this includes a `video`_ in webm by Emily Dunham at
-linux.conf.au in 2017. 
+`Chapter 6
+<https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html>`_
+introduces the Option<T> enum. Its `documentation
+<https://doc.rust-lang.org/std/option/enum.Option.html>`_ is useful.
 
 `The Rust Cookbook
 <https://rust-lang-nursery.github.io/rust-cookbook/>`_ [#f2]_
