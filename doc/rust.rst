@@ -109,8 +109,12 @@ unless the ownership is gone and the access would be undefined.
 introduces the Option<T> enum. Its `documentation
 <https://doc.rust-lang.org/std/option/enum.Option.html>`_ is useful.
 
-`The Rust Cookbook
+The Rust Cookbook
+
+There is an abandoned version `here
 <https://rust-lang-nursery.github.io/rust-cookbook/>`_ [#f2]_
+and a better updated version by `jamesgraves <https://github.com/jamesgraves/rust-cookbook>`_ at this location:
+`link <https://jamesgraves.github.io/rust-cookbook/intro.html>`_
 
 `The Rust Reference <https://doc.rust-lang.org/nightly/reference/>`_
 [#f3]_
@@ -131,7 +135,7 @@ http://talks.edunham.net/lca2018/should-you-rewrite-in-rust/
 	    
 .. [#f1] Accessed on 17 August 2019.
 
-.. [#f2] Accessed on 6 Oct 2019.
+.. [#f2] Accessed on 24 Nov 2024
 
 .. [#f3] Accessed on 6 Oct 2019.
 	 
