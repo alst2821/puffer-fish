@@ -20,6 +20,11 @@
   Rust ecosystem post their open source Rust projects for others to
   use."
 
+* `The Rustonomicon <https://doc.rust-lang.org/nomicon/intro.html>`_, book that
+  goes into `the awful detail that you need to understand when writing unsafe rust` and it `assumes considerable prior knowledge`.
+
+  Be warned of UNLEASHING INDESCRIBABLE HORRORS THAT SHATTER YOUR PSYCHE AND SET YOUR MIND ADRIFT IN THE UNKNOWABLY INFINITE COSMOS.
+
 The rust programming language book
 ----------------------------------
 
@@ -94,7 +99,7 @@ Methods to extend the lifetime (for the example of a function returning a string
 The topics are: returning a reference, enough permissions, aliasing
 and mutating a data structure
 
-Only now after reading `chapter 5 <https://rust-book.cs.brown.edu/ch05-03-method-syntax.html>`_
+Only now after reading `chapter 5 <https://rust-book.cs.brown.edu/ch05-03-method-syntax.html>`_, 
 I realise that there are these properties on a variable:
 
  * readable (yes/no)
