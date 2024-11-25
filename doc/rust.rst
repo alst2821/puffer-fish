@@ -16,6 +16,8 @@
 
 * `The Rust Reference <https://doc.rust-lang.org/nightly/reference/>`_
 
+* `The rust playground <https://play.rust-lang.org/>`_
+
 * `crates.io <https://crates.io/>`_ "Crates.io is where people in the
   Rust ecosystem post their open source Rust projects for others to
   use."
