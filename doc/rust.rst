@@ -127,6 +127,15 @@ There is an abandoned version `here
 and a better updated version by `jamesgraves <https://github.com/jamesgraves/rust-cookbook>`_ at this location:
 `link <https://jamesgraves.github.io/rust-cookbook/intro.html>`_ [#f4]_
 
+Rust training from microsoft
+----------------------------
+
+`Take your first steps in rust <https://learn.microsoft.com/en-us/training/paths/rust-first-steps/>`_ [#f5]_
+
+`A char in rust is a 21-bit integer that is padded to be 32-bits wide` 
+Includes link to `documentation for char. <https://doc.rust-lang.org/std/primitive.char.html>`_
+
+
 Old video link
 --------------
 
@@ -146,3 +155,4 @@ http://talks.edunham.net/lca2018/should-you-rewrite-in-rust/
 
 .. [#f4] Accessed on 24 Nov 2024
      
+.. [#f5] Accessed on 30 Nov 2024
