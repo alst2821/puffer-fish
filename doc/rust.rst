@@ -7,7 +7,9 @@
 * `The Rust programming language <https://doc.rust-lang.org/book/title-page.html>`_ [#f1]_.
 
 * `Rust book experiment (brown.edu) - includes quizes! <https://rust-book.cs.brown.edu/experiment-intro.html>`_ [#f2]_
-  
+
+* `Rust by example <https://doc.rust-lang.org/stable/rust-by-example/>`_
+
 * `The cargo book <https://doc.rust-lang.org/cargo/>`_
 
 * Cargo recognises `semantic versioning <https://semver.org/>`_
@@ -45,7 +47,7 @@ package, including the commands 'cargo doc', 'cargo build', 'cargo
 update'.
 
 The documentation example::
-  
+
   cargo doc --open
 
 `Chapter 4
@@ -101,7 +103,7 @@ Methods to extend the lifetime (for the example of a function returning a string
 The topics are: returning a reference, enough permissions, aliasing
 and mutating a data structure
 
-Only now after reading `chapter 5 <https://rust-book.cs.brown.edu/ch05-03-method-syntax.html>`_, 
+Only now after reading `chapter 5 <https://rust-book.cs.brown.edu/ch05-03-method-syntax.html>`_,
 I realise that there are these properties on a variable:
 
  * readable (yes/no)
@@ -123,7 +125,7 @@ The Rust Cookbook
 -----------------
 
 There is an abandoned version `here
-<https://rust-lang-nursery.github.io/rust-cookbook/>`_ 
+<https://rust-lang-nursery.github.io/rust-cookbook/>`_
 and a better updated version by `jamesgraves <https://github.com/jamesgraves/rust-cookbook>`_ at this location:
 `link <https://jamesgraves.github.io/rust-cookbook/intro.html>`_ [#f4]_
 
@@ -132,7 +134,7 @@ Rust training from microsoft
 
 `Take your first steps in rust <https://learn.microsoft.com/en-us/training/paths/rust-first-steps/>`_ [#f5]_
 
-`A char in rust is a 21-bit integer that is padded to be 32-bits wide` 
+`A char in rust is a 21-bit integer that is padded to be 32-bits wide`
 Includes link to `documentation for char. <https://doc.rust-lang.org/std/primitive.char.html>`_
 
 
@@ -146,7 +148,7 @@ Emily Dunham "Should you rewrite in Rust?" `(youtube)
 http://talks.edunham.net/lca2018/should-you-rewrite-in-rust/
 
 .. rubric:: Footnotes
-	    
+
 .. [#f1] Accessed Nov 2024
 
 .. [#f2] The content was different to the rust book when checking in Nov 2024.
@@ -154,5 +156,5 @@ http://talks.edunham.net/lca2018/should-you-rewrite-in-rust/
 .. [#f3] Still a topic to learn as I write this.
 
 .. [#f4] Accessed on 24 Nov 2024
-     
+
 .. [#f5] Accessed on 30 Nov 2024
