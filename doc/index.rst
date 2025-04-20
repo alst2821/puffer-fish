@@ -22,6 +22,7 @@ subverting them into publishing!
    go
    linux
    debian
+   devcontainer
    haskell
    kernel
    java
