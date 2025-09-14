@@ -32,5 +32,3 @@ The recipe is to use::
 This is assuming that the machine/account is using zsh, otherwise
 change .zshrc for .bashrc or similar.
 
-
-  

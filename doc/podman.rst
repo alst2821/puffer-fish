@@ -90,4 +90,49 @@ Followed by::
   Error: Command failed: <copy of command above>
   
 
+Attempts on fedora 42
+=====================
+
+Fedora already has nodejs 22 and npm 10.
+
+The command to install devcontainer::
+
+  npm install -g @devcontainers/cli
+
+Fails because I am not using the root account.
+
+The recipe from above will solve this
+
+  npm config set prefix '~/.local/'
+
+  mkdir -p ~/.local/bin
+
+The section to add to .bashrc is ::
+
+  if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+  fi
+  export PATH
+  
+
+The result is that the exercise proposed in the `blog post above
+<https://happihacking.com/blog/posts/2023/dev-containers-emacs/>`_
+works okay. The commands were just those proposed::
+
+  mkdir rust-dev-container && cd rust-dev-container
+  mkdir .devcontainer && touch .devcontainer/Dockerfile && touch .devcontainer/devcontainer.json
+  <edit Dockerfile>
+  <edit devcontainer.json>
+  devcontainer up --workspace-folder . # launch
+  #initialize the project from inside the container
+  devcontainer exec --workspace-folder . cargo init 
+
+There were several errors because fedora is using podman instead of docker.
+One of the prominent errors was about the sh command::
+
+  WARN[0005] SHELL is not supported for OCI image format, [/bin/sh -c] will be ignored. Must use `docker` format
+
+Other error relates to the docker socket emulation::
+
+  Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
 
