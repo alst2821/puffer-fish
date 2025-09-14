@@ -44,3 +44,10 @@ Regularly run this to update the list of ports::
 
   sudo port selfupdate
 
+To see the contents of a port use::
+
+  port contents <portname>
+
+To see notes for a port::
+
+  port notes <portname>

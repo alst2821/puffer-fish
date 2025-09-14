@@ -38,6 +38,7 @@ subverting them into publishing!
    make
    matplotlib
    minikube
+   node-and-npm
    osx
    podman
    power-shell
