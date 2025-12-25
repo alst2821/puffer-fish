@@ -24,7 +24,7 @@ This gets the function above mapped to "K" in dired::
   (with-eval-after-load 'dired
     (define-key dired-mode-map "K"
       'pf-copy-filename-as-kill))
-  
+
 For versions of emacs 27 or older::
 
   (add-hook 'dired-load-hook
@@ -32,7 +32,7 @@ For versions of emacs 27 or older::
             (define-key dired-mode-map "K"
               'pf-copy-filename-as-kill)))
 
-              
+
 This function emulates vim-exec::
 
   (defun pf-emulate-vim-exec ()
@@ -86,7 +86,7 @@ These functions are similar to vim's `*` command::
 
 Increment number at point ( `Solution in emacswiki <https://www.emacswiki.org/emacs/IncrementNumber>`_ )::
 
-  
+
   (defun my-increment-number-decimal (&optional arg)
     "Increment the number forward from point by 'arg'."
     (interactive "p*")
@@ -107,7 +107,7 @@ Increment number at point ( `Solution in emacswiki <https://www.emacswiki.org/em
                                          answer)))))))
 
   (global-set-key (kbd "C-c +") 'my-increment-number-decimal)
-  
+
 .. _ref-emacs-sec2:
 
 Emacs tips
@@ -299,7 +299,7 @@ Emacs client for the language server protocol
 https://github.com/emacs-lsp/lsp-mode/
 
 https://emacs-lsp.github.io/lsp-mode/
-    
+
 Emacs related links
 -------------------
 
@@ -307,9 +307,6 @@ Emacs related links
   <https://lists.gnu.org/archive/html/emacs-devel/>`_.
 * `help-gnu-emacs mailing list archive
   <https://lists.gnu.org/archive/html/help-gnu-emacs/>`_.
-
-Here is a link to some `emacs tips
-<https://sites.google.com/site/roneau2010/computer-software/emacs>`_.
 
 * `Using GNU Emacs (lib.uchicago.edu) <https://www2.lib.uchicago.edu/keith/emacs>`_.
 
@@ -331,7 +328,7 @@ Maybe also useful::
   (setq compile-history
       (append compile-history
 	      '("c:/path-to-script/emacs-env.bat make")))
-  
+
 .. code:: batch
 
  @set CommandPromptType=Native
@@ -499,7 +496,7 @@ These keybinding may help if one prefers the apple command instead of ctrl::
   (global-set-key (kbd "s-b") 'backward-word)
   (global-set-key (kbd "s-f") 'forward-word)
   (global-set-key (kbd "s-d") 'kill-word)
-  
+
 Inserting foreign characters
 ----------------------------
 
@@ -532,3 +529,15 @@ I chose the ones useful when typing Spanish below.
      - C-x 8 * !
    * - ¿ (open question mark)
      - C-x 8 * ?
+
+Inserting emojis
+----------------
+
+An `article
+<https://www.masteringemacs.org/article/inserting-emoji-input-methods>`_
+from masteringemacs.org explains how to enter emojis using an input method
+modification: toggle-input-method that is typically bound to C-u C-\\
+
+😮
+🪮
+🇹🇼 🇨🇳 🇩🇪 🇬🇧 🇧🇴 🇨🇱 🇧🇮 🇪🇭
