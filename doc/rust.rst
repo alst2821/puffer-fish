@@ -141,11 +141,15 @@ Includes link to `documentation for char. <https://doc.rust-lang.org/std/primiti
 Old video link
 --------------
 
-Emily Dunham "Should you rewrite in Rust?" `(youtube)
+Emily Dunham "Should you rewrite in Rust?" `(youtube1)
 <https://www.youtube.com/watch?v=6jqy-Dizd0I>`_ (45 min) LinuxConfAu
 2018, Sydney
 
 http://talks.edunham.net/lca2018/should-you-rewrite-in-rust/
+
+Aaron Turon (Mozilla) "The Rust Programming Language"
+`(youtube2) <https://www.youtube.com/watch?v=O5vzLKg7y-k>`_ (65 min)
+Stanford Seminar, 12 March 2015
 
 .. rubric:: Footnotes
 
