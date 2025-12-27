@@ -151,6 +151,9 @@ Aaron Turon (Mozilla) "The Rust Programming Language"
 `(youtube2) <https://www.youtube.com/watch?v=O5vzLKg7y-k>`_ (65 min)
 Stanford Seminar, 12 March 2015
 
+Some more rust-related talks from Jane Street's tech-talks
+https://www.janestreet.com/tech-talks/
+
 .. rubric:: Footnotes
 
 .. [#f1] Accessed Nov 2024
