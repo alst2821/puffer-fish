@@ -541,3 +541,17 @@ modification: toggle-input-method that is typically bound to C-u C-\\
 😮
 🪮
 🇹🇼 🇨🇳 🇩🇪 🇬🇧 🇧🇴 🇨🇱 🇧🇮 🇪🇭
+
+Converting encoding
+-------------------
+
+I found some files using the iso 8891 encoding that don't display cleanly on a terminal,
+because most terminals now expect utf-8.
+
+The method to change the encoding was to open the file, change the variable `buffer-file-coding-system`
+to 'utf-8' and save the file again (`M-x write-file` or `C-x C-w` (usually)) ::
+
+  (setq buffer-file-coding-system 'utf-8)
+
+Making a note to remember next time.
+
