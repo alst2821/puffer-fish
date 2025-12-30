@@ -8,9 +8,14 @@
 
 * `Rust book experiment (brown.edu) - includes quizes! <https://rust-book.cs.brown.edu/experiment-intro.html>`_ [#f2]_
 
+  Related to this, there is a Jane Street talk by `Will Critchton <https://willcrichton.net/>`_ from Brown Univ. that mentions `aquascope`.
+  I believe it is this link here: https://cel.cs.brown.edu/aquascope/
+
 * `Rust by example <https://doc.rust-lang.org/stable/rust-by-example/>`_
 
 * `The cargo book <https://doc.rust-lang.org/cargo/>`_
+
+  See more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 * Cargo recognises `semantic versioning <https://semver.org/>`_
 
@@ -153,6 +158,13 @@ Stanford Seminar, 12 March 2015
 
 Some more rust-related talks from Jane Street's tech-talks
 https://www.janestreet.com/tech-talks/
+
+Conferences
+-----------
+
+`Splashcon 2024 IWACO <https://2024.splashcon.org/home/iwaco-2024>`_
+
+`Splashcon 2025 <https://2025.splashcon.org/>`_
 
 .. rubric:: Footnotes
 
