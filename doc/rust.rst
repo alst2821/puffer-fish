@@ -25,6 +25,8 @@
 
 * `MacroKata - like rustlings, but for macros in rust <https://github.com/tfpk/macrokata>`_
 
+* `The little book of rust macros <https://veykril.github.io/tlborm/>`_
+
 * `The rust playground <https://play.rust-lang.org/>`_
 
 * `crates.io <https://crates.io/>`_ "Crates.io is where people in the
