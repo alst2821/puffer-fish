@@ -45,6 +45,7 @@ subverting them into publishing!
    python
    pyqt
    rust
+   rustlings
    ssh
    utilities
 
