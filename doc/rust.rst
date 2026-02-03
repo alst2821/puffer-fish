@@ -13,6 +13,8 @@
 
 * `Rust by example <https://doc.rust-lang.org/stable/rust-by-example/>`_
 
+* `Little book of rust books <https://lborb.github.io/book/title-page.html>`_
+ 
 * `The cargo book <https://doc.rust-lang.org/cargo/>`_
 
   See more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -33,6 +35,9 @@
   goes into `the awful detail that you need to understand when writing unsafe rust` and it `assumes considerable prior knowledge`.
 
   Be warned of UNLEASHING INDESCRIBABLE HORRORS THAT SHATTER YOUR PSYCHE AND SET YOUR MIND ADRIFT IN THE UNKNOWABLY INFINITE COSMOS.
+
+Many of the books about rust use `'mdbook' <https://github.com/rust-lang/mdBook>`_.
+
 
 The rust programming language book
 ----------------------------------
@@ -166,6 +171,42 @@ Conferences
 
 `Splashcon 2025 <https://2025.splashcon.org/>`_
 
+Treating options and results
+----------------------------
+
+`Option<T>` is the rust enum that has two variants: `Some(T)` or `None`.
+
+`Result<T,E>` is an enum that has two variants: `Ok(T)` and
+`Err(E)`. It is used for reporting and propagating errors.
+
+There are idiomatic rust ways of dealing with transformations between `Result::Errs` and `Option::None` 
+
+There are things like the mapping of errors, unwrapping of values and the question mark syntax.
+
+The question mark syntax is `explained in the rust reference <https://doc.rust-lang.org/nightly/std/option/index.html#the-question-mark-operator->`_ ::
+
+  Ending the expression with ? will result in the Some’s unwrapped
+  value, unless the result is None, in which case None is returned
+  early from the enclosing function.
+
+  ? can be used in functions that return Option because of the early
+  return of None that it provides.
+
+This is very similar for the `result case <https://doc.rust-lang.org/nightly/std/result/index.html#the-question-mark-operator->`_::
+
+  Ending the expression with ? will result in the Ok’s unwrapped
+  value, unless the result is Err, in which case Err is returned early
+  from the enclosing function.
+
+  ? can be used in functions that return Result because of the early
+  return of Err that it provides.
+
+The `library documentation for Option
+<https://doc.rust-lang.org/nightly/std/option/index.html#transforming-contained-values>`_
+shows the transformations to convert from Option to Result for some
+cases as well as many convenience methods.
+
+  
 .. rubric:: Footnotes
 
 .. [#f1] Accessed Nov 2024
