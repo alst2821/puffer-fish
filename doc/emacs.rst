@@ -555,3 +555,15 @@ to 'utf-8' and save the file again (`M-x write-file` or `C-x C-w` (usually)) ::
 
 Making a note to remember next time.
 
+Finding the switches used for compiling emacs
+---------------------------------------------
+
+Find that information using ::
+
+  M-: system-configuration-options
+
+or its equivalent::
+
+  M-x eval-expression RET system-configuration-options RET
+
+
